@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Usmanov</title>
+</head>
+
+<body>
+  <div data-aos="zoom-in" class="wrapper">
+    <header>
+      <div class="container">
+        
+  
+        <div class="navbar">
+          <a class='logo' href='/'>
+            <h1>PORTFOLIO</h1>
+          </a>
+          <nav>
+            <ul class="nav_links">
+              <li><a class='nav-link' href='about.html'>About</a></li>
+              <li><a class='nav-link' href='family.html'>Family</a></li>
+              <li><a class='nav-link' href='project.html'>Projects</a></li>
+              <li><a class='nav-link' href='contact.html'>Contacts</a></li>
+              <li><a href="https://bookstore-web-ap.netlify.app/" class="oi">Asosiyloyiha</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="hero">
+          <div class="hero-content">
+            <h1 class="hero-text">
+              Assalomu alekum Hurmatli ota-onalar Mening Ismim Ixlosbek PDP junior F13 o'quvchisiman Sizlar b   ilan bugungi loyihamni o'rtoqlashmoqchiman.
+            </h1>
+            <a class='hero-btn' href='about.html'>To'liqroq ma'lumot</a>
+          </div>
+          <div class="hero-img">
+            <img src="images/photo_2026-08-18_09-15-28.jpg" alt="Usmanov" />
+          </div>
+        </div>
+
+      </div>
+    </header>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    duratoin:1000,
+      once: true
+    });
+  </script>
+  <script>
+
+    window.addEventListener("load", () => {
+
+    const elements = document.querySelectorAll(".logo, nav, .hero-text, .hero img, .btn");
+
+    elements.forEach((el, index) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(60px)";
+
+        setTimeout(() => {
+            el.style.transition = "1.8s ease";
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+        }, index * 500);
+    });
+
+});
+  </script>
+</body>
+
+</html>
